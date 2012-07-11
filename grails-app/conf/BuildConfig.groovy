@@ -30,10 +30,11 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
     }
-    dependencies {
-        // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
-        // runtime 'mysql:mysql-connector-java:5.1.16'
+    dependencies {
+        runtime("org.ow2.bonita:bonita-client:5.6.3") {
+            excludes "scannotation", "slf4j-jdk14"
+        }
     }
 
     plugins {
