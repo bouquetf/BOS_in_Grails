@@ -18,7 +18,7 @@
 
 <g:each in="${processList}" var="processUUID">
     <ul>
-        <li>${processUUID}</li>
+        <li><g:link action="start_Buy_A_Mini" params="${[process:processUUID]}">${processUUID}</g:link></li>
     </ul>
 </g:each>
 
